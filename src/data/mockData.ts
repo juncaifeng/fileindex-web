@@ -91,3 +91,38 @@ export const knowledgeTree = [
   { name: '风险管理' },
   { name: '合规制度' },
 ];
+
+export const entityTypes = [
+  { id: '1', name: '政策文件', code: 'POLICY_DOC', domain: '信贷政策', attrCount: 12, status: 'enabled' as const, updatedAt: '2024-05-08 14:32' },
+  { id: '2', name: '考核指标', code: 'KPI_INDEX', domain: '普惠金融', attrCount: 8, status: 'enabled' as const, updatedAt: '2024-05-07 09:15' },
+  { id: '3', name: '制度规范', code: 'REGULATION', domain: '合规制度', attrCount: 15, status: 'pending' as const, updatedAt: '2024-05-06 16:45' },
+  { id: '4', name: '风险模型', code: 'RISK_MODEL', domain: '风险管理', attrCount: 6, status: 'enabled' as const, updatedAt: '2024-05-05 11:20' },
+];
+
+export const categories = [
+  { id: '1', name: '贷款政策', code: 'LOAN_POLICY', domain: '信贷政策', termCount: 45, status: 'enabled' as const, updatedAt: '2024-05-08 14:32' },
+  { id: '2', name: '风控规则', code: 'RISK_RULE', domain: '风险管理', termCount: 32, status: 'enabled' as const, updatedAt: '2024-05-07 09:15' },
+  { id: '3', name: '合规要求', code: 'COMPLY_REQ', domain: '合规制度', termCount: 28, status: 'pending' as const, updatedAt: '2024-05-06 16:45' },
+  { id: '4', name: '普惠标准', code: 'INCLUSIVE_STD', domain: '普惠金融', termCount: 23, status: 'enabled' as const, updatedAt: '2024-05-05 11:20' },
+];
+
+export const templates = [
+  { id: '1', name: '政策文件模板', code: 'POLICY_TPL', attrCount: 12, usageCount: 45, status: 'enabled' as const, updatedAt: '2024-05-08 14:32' },
+  { id: '2', name: '考核指标模板', code: 'KPI_TPL', attrCount: 8, usageCount: 32, status: 'enabled' as const, updatedAt: '2024-05-07 09:15' },
+  { id: '3', name: '制度规范模板', code: 'REG_TPL', attrCount: 15, usageCount: 28, status: 'pending' as const, updatedAt: '2024-05-06 16:45' },
+  { id: '4', name: '风险模型模板', code: 'RISK_TPL', attrCount: 6, usageCount: 23, status: 'enabled' as const, updatedAt: '2024-05-05 11:20' },
+];
+
+export const relations = [
+  { id: '1', name: '属于', code: 'BELONGS_TO', sourceType: '词条', targetType: '领域', usageCount: 128, status: 'enabled' as const, updatedAt: '2024-05-08 14:32' },
+  { id: '2', name: '引用', code: 'REFERENCES', sourceType: '政策', targetType: '制度', usageCount: 86, status: 'enabled' as const, updatedAt: '2024-05-07 09:15' },
+  { id: '3', name: '依赖', code: 'DEPENDS_ON', sourceType: '指标', targetType: '模型', usageCount: 45, status: 'pending' as const, updatedAt: '2024-05-06 16:45' },
+  { id: '4', name: '关联', code: 'RELATES_TO', sourceType: '词条', targetType: '词条', usageCount: 67, status: 'enabled' as const, updatedAt: '2024-05-05 11:20' },
+];
+
+export const standards = [
+  { id: '1', name: '小微企业认定标准', code: 'SME_STD', category: '企业规模', version: 'v2.1', status: 'enabled' as const, updatedAt: '2024-05-08 14:32' },
+  { id: '2', name: '授信额度计算口径', code: 'CREDIT_CALC', category: '额度计算', version: 'v1.5', status: 'enabled' as const, updatedAt: '2024-05-07 09:15' },
+  { id: '3', name: '风险评级标准', code: 'RISK_RATE', category: '风险评估', version: 'v3.0', status: 'pending' as const, updatedAt: '2024-05-06 16:45' },
+  { id: '4', name: '普惠金融覆盖率', code: 'INCLUSIVE_COVER', category: '覆盖率', version: 'v1.2', status: 'enabled' as const, updatedAt: '2024-05-05 11:20' },
+];
